@@ -21,7 +21,11 @@ class AcTest (unittest.TestCase):
         turn_off = self.ac.turn_off()
         self.assertFalse(turn_off,"Ac is Off now")
 
-    def test_that_ac_temperture_can_increase(self):
+    def test_that_ac_temperature_can_increase(self):
         turn_on = self.ac.turn_on()
         self.assertTrue(turn_on,"Ac is On now")
-        temperture = self.ac.temperture()
+        temperature_increase = self.ac.temperature_increase = 15
+        self.assertEqual(temperature_increase,16)
+
+
+

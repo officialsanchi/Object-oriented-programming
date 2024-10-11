@@ -20,7 +20,7 @@ class Tv:
      def set_channel(self, channel):
          if not self.isOn == True:
              print("tv is on")
-         if 1<= channel <= 100:
+         if 1 <= channel <= 100:
              self.channel = channel
          else:
             raise ValueError("channel must be between 1 and 100")

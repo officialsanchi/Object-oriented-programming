@@ -78,3 +78,5 @@ class BikeTest(unittest.TestCase):
         bike_speed = self.bike.bike_speed = 44
         accelerate_by_gear_4 = self.bike.deccelerated_by_gear_levels(4)
         self.assertEqual(accelerate_by_gear_4, 40)
+
+
