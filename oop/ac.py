@@ -2,6 +2,7 @@ class Ac:
 
     def __init__(self):
         self. isOn = False
+        self.temperature = 16
 
     def turn_on(self):
         if not self.isOn:
@@ -15,12 +16,16 @@ class Ac:
             print("Ac is Off  now ")
             return self.isOn
 
+
+
     def temperture_increase(self,temperture):
         if  not self.isOn == True :
             print("Ac is On now")
 
-        if temperture < 16  and temperture > 30:
-            return temperture
+
+        if temperture < 15 and temperture > 30:
+
+            return temperture+1
 
 
 
